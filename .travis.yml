@@ -10,6 +10,7 @@ addons:
     - texlive-latex-extra
     - texlive-latex-recommended
     - texlive-base
+    - latex-beamer
     - texlive-bibtex-extra
     - texlive-extra-utils
     - texlive-fonts-recommended
@@ -24,3 +25,14 @@ addons:
     - latex-xcolor
 script:
 - make
+deploy:
+  provider: releases
+  api_key:
+    secure: azSvGRnxOBlVirnTwzgi6DiozouxvGv/mrASDy/XT+XxhMIbQlcmrUMNUAZH5qK5iHL0a/zriMTeOad6CpFJMMuiFPUjjgPcwZztq/lOHNPQ3IuHGCIzKGq6YD6g8iKrutfCTjsdf0DWsATGCTtOzAvkNSaclbxOCKCDXypty6hxT2UIY35UHB+KgpmXz+evgXXYcmqrC/0zM/cbQMn4LZ5ZJvbNx7nX0Ia8tgDxhhBhFNhhFJKDmJKWnE8ZTs6Sb7BeAWpBm4dn3ouj0ejdenhcjavXZhMqJN2mruf2nPtYjzkPKXgcmGXBUR9nWmbqLEiOR5CkpJFHgq/OgsD53DjuIkXXfpLALDbtWB0sV3RRItV8b6QrGxmQqLROQ6WfiQt5QbzAwmrkJaE7fT+4hlxbYI6GHslzfCs1tzG9QDShD0GNz13VOoO/I6kAA9TLSL/p8B+ggeHfWyzggBQ8MoSou9+McC9cKDYJlgthMeGp1pln/qic7Nrofl6oV5u3QsvrrTGIhU+19WUG5euLUqhzRfEprLNTd3jA3Y3U1FQECtbErIKtLjoDs3ZzUrCK06tKzBvFmPnjNdIGNWBvg/NiSI9xpMSgyFuz+qxzPs7o7YU6DsZj5I7Z/5+YhUK4dIsmUzDaAvlwu6+XIYYaBQOohNaNHjnNf5Y8LQTFLjg=
+  file: Presentation.pdf
+  on:
+    repo: Oberacda/ProseminarApiUsabilityPresentation
+    branch: 
+    - develop
+    - master
+    tags: true
