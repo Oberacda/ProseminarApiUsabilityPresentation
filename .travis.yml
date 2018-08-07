@@ -24,15 +24,3 @@ addons:
     - latex-xcolor
 script:
 - make
-deploy:
-  provider: releases
-  api_key:
-    secure: qiMMg9/p6LTtpZ+cVNCQtU/o7paH9urbIvFtVqrMR3VkZsdIwwe3VgNK7RqEjvZsIz7dL77Z2Sgvt2rPm2OE3M4yL5HkXhTjl2tUGVMBd99Hu1y/cgflhHTw/G56wUJidleMbltj8HsfXyzPAENNOGUa4UU2Z4rPhOHo/6Q3EXfG0/IkF2rRcLAAuL+T7Mlxh4cIpLMfZVEjrx8OpjOyVru3oYtL0Xl13c/s1mBt2RCasXsXrIuccqUm+B2pRVpHpTC0zsIPNtbdtZTPvcKCQZkjY8LzWUD2+9ixe1U0CXQ/OoGVDxj9rqSrrMHZNoetGEzAVkcc1oucRIhBcjsdNxFgviprqYJU3iGnHrfuKxRc1K7e0Wg9TXFAMQnx8ESGiRLDRHkLRYuorzFxxePKIxDU6i66Bt3PKuxFAvQ/Reez1A/Tl+plDe8bwLAdpvbZ1zpZYJSG4A7j/lRk6mju5QJEa8u2yU0UlHA4kT3FfLFri/KtRepGerJNV+ZOxbrPA8SzMKw17KffsBstf6XpXhXqcgG+SUjxjUiS4B3IpH9PyjTtZl5H7hUc1I5CKzbp2X674bbt/zb+sVqbx+2ehXbBqnsAU7n/bMj9Bn4BQvVovrssnnHRv1cSC9EbUFZqOf4TZSr0iqxveR9SevRnRcYdYi6Pm/GWhC7Yp9t2EVk=
-  file: api-usability_effekte_der_konstruktoren.pdf
-  skip_cleanup: true
-  on:
-    repo: Oberacda/ProseminarApiUsabilityDocuments
-    branch: 
-    - develop
-    - master
-    tags: true
