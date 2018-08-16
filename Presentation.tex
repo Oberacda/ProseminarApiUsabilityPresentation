@@ -31,22 +31,87 @@
 
 \section{Motivation}
 
-	\begin{frame}{Einleitung}
+	\begin{frame}[fragile]{Default vs. Required}
+		\begin{columns}[T,onlytextwidth]
+			
+			\begin{column}{0.45\textwidth}
+				\begin{center}\textit{create-set-call}\end{center}
+				\begin{verbatim}
+					var foo = new FooClass();
+					foo.setBar(barValue);
+					foo.use();
+				\end{verbatim}
+			\end{column}
+			\vrule{}
+			\begin{column}{0.02\textwidth}
+			\end{column}
+			\begin{column}{0.53\textwidth}
+				\begin{center}\textit{create-call}\end{center}
+				\begin{verbatim}
+					var foo = new FooClass(barValue);
+					foo.use();
+				\end{verbatim}
+			\end{column}
+			
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}{Verwandte Arbeiten}
+		\begin{quote}
+			We found the create-set-call pattern to be more
+			usable than, and preferred to, required constructors.
+		\end{quote}
+		\hfill - Stylos \& Clarke\\
+		\vspace{\baselineskip}
+		\vspace{\baselineskip}
+		\begin{quote}
+			In our study, however, the participants had no particular
+			difficulties with using constructors with arguments [...]. 
+		\end{quote}
+		\hfill - Piccioni, Furia \& Meyer
+	
 	
 	\end{frame}
 
 \section{Forschungsfrage \& Hypothese}
 
-	\begin{frame}{Abhängige Variablen}
+	\begin{frame}{Idee}
+		Jeweils 4 Codeschnipsel mit verstecktem Fehler
+	\end{frame}
 
+	\begin{frame}{Abhängige Variablen}
+		\begin{itemize}
+			\item Anzahl gefundener Fehler
+			\item Zeit
+			\item Lesefokus (Areas of Interest)
+			\begin{itemize}
+				\item Dokumentation
+				\item Pre-Defekt
+				\item Defekt
+				\item Post-Defekt
+			\end{itemize}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Unabhängige Variablen}
-
+		\begin{itemize}
+			\item Art des Konstruktors:
+			\begin{itemize}
+				\item Default
+				\item Required
+			\end{itemize}
+			\item Art des Fehlers:
+			\begin{itemize}
+				\item Syntaktisch
+				\item Semantisch
+			\end{itemize}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}[standout]{Hypothese}
-		[...]
+		Semantische Fehler im Quellcode werden mit Default-Konstruktoren schneller entdeckt
+		\begin{center}und\end{center}
+		Konstruktoren haben keinen Einfluss auf das Finden von Syntaktischen Fehlern.
 	\end{frame}
 
 \section{Experimentalaufbau}
