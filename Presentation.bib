@@ -1,43 +1,213 @@
-@article{Knuth92,
-        author = "D.E. Knuth",
-        title = "Two notes on notation",
-        journal = "Amer. Math. Monthly",
-        volume = "99",
-        year = "1992",
-        pages = "403--422",
+% !BIB TS-program = bibtex
+% !TeX encoding = UTF-8
+% !TeX spellcheck = de_DE
+% !TeX root = api-usability_effekte_der_konstruktoren.tex
+
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+%% Created for David Oberacker at 2018-07-04 11:55:00 +0200 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+@inproceedings{Schankin:2018:DCI:3196321.3196332,
+    author = {Schankin, Andrea and Berger, Annika and Holt, Daniel V. and Hofmeister, Johannes C. and Riedel, Till and Beigl, Michael},
+    title = {Descriptive Compound Identifier Names Improve Source Code Comprehension},
+    booktitle = {Proceedings of the 26th Conference on Program Comprehension},
+    series = {ICPC '18},
+    year = {2018},
+    isbn = {978-1-4503-5714-2},
+    location = {Gothenburg, Sweden},
+    pages = {31--40},
+    numpages = {10},
+    url = {http://doi.acm.org/10.1145/3196321.3196332},
+    doi = {10.1145/3196321.3196332},
+    acmid = {3196332},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {Java developers, identifier names, program comprehension, software quality},
+    Abstract = {Reading and understanding source code is a major task in software
+    18 development. Code comprehension depends on the quality
+    19 of code, which is impacted by code structure and identifier naming.
+    20 In this paper we empirically investigated whether longer but
+    21 more descriptive identifier names improve code comprehension
+    22 compared to short names, as they represent useful information in
+    23 more detail. In a web-based study 88 Java developers were asked
+    24 to locate a semantic defect in source code snippets. With descriptive
+    25 identifier names, developers spent more time in the lines of
+    26 code before the actual defect occurred and changed their reading
+    27 direction less often, finding the semantic defect about 14\% faster
+    28 than with shorter but less descriptive identifier names. These effects
+    29 disappeared when developers searched for a syntax error, i.e.,
+    30 when no in-depth understanding of the code was required. Interestingly,
+    31 the style of identifier names had a clear impact on program
+    32 comprehension for more experienced developers but not for less
+    33 experienced developers.},
+} 
+
+@article{MOSQUEIRAREY201846,
+    Abstract = {Context
+    The currently existing literature about Application Program Interface (API) usability is heterogeneous in terms of goals, scope, and audience; and its connection to accepted definitions of usability is rarely made explicit. The use of metrics to measure API usability is focused only on measurable characteristics excluding those usability aspects that are related to the subjectivity of human opinions.
+    Objective
+    Our objective is to build a comprehensive set of heuristics and guidelines for API usability that is a structured synthesis of the existing literature on API usability but which also covers other aspects that have been neglected so far. This set is explicitly connected with a usability model, something that allows us to check if we are addressing actual usability problems.
+    Method
+    Our approach is to follow a systematic approach based on a comprehensive model of usability and context-of-use. From this comprehensive model we derived the set of heuristics and guidelines that are used to carry out a heuristic evaluation with usability experts and a subjective analysis with users. The influence of the context of use, something that is normally ignored, is explicitly analyzed.
+    Results
+    Our heuristics and guidelines were integrated into a usability study of a sleep medicine API. In this study, we were able to identify several usability issues of the proposed API that are not explicitly addressed in the existing literature. The context of use helped us to identify those categories that were more relevant to consider in order to improve API usability.
+    Conclusion
+    The literature on API usability is very technically-minded and tends to neglect the subjective component of usability. We contribute to a more global and comprehensive view of the usability of APIs that is not contradictory but complementary with metrics. Our criteria ease the always necessary usability evaluation with human evaluators and users.},
+    Author = {Eduardo Mosqueira-Rey and David Alonso-R{\'\i}os and Vicente Moret-Bonillo and Isaac Fern{\'a}ndez-Varela and Diego {\'A}lvarez-Est{\'e}vez},
+    Date-Added = {2018-07-04 09:44:45 +0000},
+    Date-Modified = {2018-07-04 09:44:45 +0000},
+    Doi = {https://doi.org/10.1016/j.infsof.2017.12.010},
+    Issn = {0950-5849},
+    Journal = {Information and Software Technology},
+    Keywords = {Usability, Usability taxonomies, Usability studies, Application program interfaces, APIs, Sleep medicine},
+    Pages = {46 - 63},
+    Title = {A systematic approach to API usability: Taxonomy-derived criteria and a case study},
+    Url = {http://www.sciencedirect.com/science/article/pii/S0950584917302471},
+    Volume = {97},
+    Year = {2018},
+    Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S0950584917302471},
+    Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8Qcy4uLy4uLy4uLy4uL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci8xLXMyLjAtUzA5NTA1ODQ5MTczMDI0NzEtbWFpbi5wZGbSFwsYGVdOUy5kYXRhTxECLgAAAAACLgACAAAMTWFjaW50b3NoX0hEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////HzEtczIuMC1TMDk1MDU4NDkxNyNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAABAAGAAAKIGN1AAAAAAAAAAAAAAAAAAsyX0xpdGVyYXR1cgAAAgCGLzpVc2VyczpvYmVyYWNkYTpEb2N1bWVudHM6S0lUOk9uZURyaXZlIC0gYndlZHU6SW5mb3JtYXRpa19CU2M6M180LlNlbWVzdGVyOjBfUHJvc2VtaW5hcjoyX0xpdGVyYXR1cjoxLXMyLjAtUzA5NTA1ODQ5MTczMDI0NzEtbWFpbi5wZGYADgBEACEAMQAtAHMAMgAuADAALQBTADAAOQA1ADAANQA4ADQAOQAxADcAMwAwADIANAA3ADEALQBtAGEAaQBuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAXwBIAEQAEgCEVXNlcnMvb2JlcmFjZGEvRG9jdW1lbnRzL0tJVC9PbmVEcml2ZSAtIGJ3ZWR1L0luZm9ybWF0aWtfQlNjLzNfNC5TZW1lc3Rlci8wX1Byb3NlbWluYXIvMl9MaXRlcmF0dXIvMS1zMi4wLVMwOTUwNTg0OTE3MzAyNDcxLW1haW4ucGRmABMAAS8AABUAAgAP//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4BBAEJAREDQwNFA0oDVQNeA2wDcAN3A4ADhQOSA5UDpwOqA68AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADsQ==},
+    Bdsk-Url-2 = {https://doi.org/10.1016/j.infsof.2017.12.010}}
+
+@inproceedings{6681333,
+    Abstract = {Modern software development extensively involves reusing library components accessed through their Application Programming Interfaces (APIs). Usability is therefore a fundamental goal of API design, but rigorous empirical studies of API usability are still relatively uncommon. In this paper, we present the design of an API usability study which combines interview questions based on the cognitive dimensions framework, with systematic observations of programmer behavior while solving programming tasks based on ``tokens''. We also discuss the implementation of the study to assess the usability of a persistence library API (offering functionalities such as storing objects into relational databases). The study involved 25 programmers (including students, researchers, and professionals), and provided additional evidence to some critical features evidenced by related studies, such as the difficulty of finding good names for API features and of discovering relations between API types. It also discovered new issues relevant to API design, such as the impact of flexibility, and confirmed the crucial importance of accurate documentation for usability.},
+    Author = {M. Piccioni and C. A. Furia and B. Meyer},
+    Booktitle = {2013 ACM / IEEE International Symposium on Empirical Software Engineering and Measurement},
+    Date-Added = {2018-07-04 09:43:17 +0000},
+    Date-Modified = {2018-07-04 09:43:17 +0000},
+    Doi = {10.1109/ESEM.2013.14},
+    Issn = {1949-3770},
+    Keywords = {application program interfaces;relational databases;software engineering;API usability;application programming interfaces;cognitive dimensions framework;library component reusability;programmer behavior;relational databases;software development;Documentation;Interviews;Libraries;Programming;Protocols;Relational databases;Usability;application programming interfaces},
+    Month = {Oct},
+    Pages = {5-14},
+    Title = {An Empirical Study of API Usability},
+    Year = {2013},
+    Bdsk-Url-1 = {https://dx.doi.org/10.1109/ESEM.2013.14},
+    Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QYy4uLy4uLy4uLy4uL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci9BUElfdXNhYmlsaXR5LnBkZtIXCxgZV05TLmRhdGFPEQHuAAAAAAHuAAIAAAxNYWNpbnRvc2hfSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8RQVBJX3VzYWJpbGl0eS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAEAAYAAAogY3UAAAAAAAAAAAAAAAAACzJfTGl0ZXJhdHVyAAACAHYvOlVzZXJzOm9iZXJhY2RhOkRvY3VtZW50czpLSVQ6T25lRHJpdmUgLSBid2VkdTpJbmZvcm1hdGlrX0JTYzozXzQuU2VtZXN0ZXI6MF9Qcm9zZW1pbmFyOjJfTGl0ZXJhdHVyOkFQSV91c2FiaWxpdHkucGRmAA4AJAARAEEAUABJAF8AdQBzAGEAYgBpAGwAaQB0AHkALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaABfAEgARAASAHRVc2Vycy9vYmVyYWNkYS9Eb2N1bWVudHMvS0lUL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci9BUElfdXNhYmlsaXR5LnBkZgATAAEvAAAVAAIAD///AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAPQA+QEBAvMC9QL6AwUDDgMcAyADJwMwAzUDQgNFA1cDWgNfAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA2E=}}
+
+@article{Scheller:2015:AMA:2803544.2803997,
+    Acmid = {2803997},
+    Address = {Newton, MA, USA},
+    Author = {Scheller, Thomas and K\"{u}hn, Eva},
+    Date-Added = {2018-07-04 09:41:49 +0000},
+    Date-Modified = {2018-07-04 09:41:49 +0000},
+    Doi = {10.1016/j.infsof.2015.01.009},
+    Issn = {0950-5849},
+    Issue_Date = {May 2015},
+    Journal = {Inf. Softw. Technol.},
+    Keywords = {API design, API usability, Complexity measures, Metrics},
+    Month = may,
+    Number = {C},
+    Numpages = {18},
+    Pages = {145--162},
+    Publisher = {Butterworth-Heinemann},
+    Title = {Automated Measurement of API Usability},
+    Url = {http://dx.doi.org/10.1016/j.infsof.2015.01.009},
+    Volume = {61},
+    Year = {2015},
+    Bdsk-Url-1 = {http://dx.doi.org/10.1016/j.infsof.2015.01.009},
+    Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QnS4uLy4uLy4uLy4uL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci9BdXRvbWF0ZWRtZWFzdXJlbWVudG9mQVBJdXNhYmlsaXR5VGhlQVBJQ29uY2VwdHNGcmFtZXdvcmtfRUxTRVZJRVJfMjAxNS5wZGbSFwsYGVdOUy5kYXRhTxEC1gAAAAAC1gACAAAMTWFjaW50b3NoX0hEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0F1dG9tYXRlZG1lYXN1cmVtZSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAABAAGAAAKIGN1AAAAAAAAAAAAAAAAAAsyX0xpdGVyYXR1cgAAAgCwLzpVc2VyczpvYmVyYWNkYTpEb2N1bWVudHM6S0lUOk9uZURyaXZlIC0gYndlZHU6SW5mb3JtYXRpa19CU2M6M180LlNlbWVzdGVyOjBfUHJvc2VtaW5hcjoyX0xpdGVyYXR1cjpBdXRvbWF0ZWRtZWFzdXJlbWVudG9mQVBJdXNhYmlsaXR5VGhlQVBJQ29uY2VwdHNGcmFtZXdvcmtfRUxTRVZJRVJfMjAxNS5wZGYADgCYAEsAQQB1AHQAbwBtAGEAdABlAGQAbQBlAGEAcwB1AHIAZQBtAGUAbgB0AG8AZgBBAFAASQB1AHMAYQBiAGkAbABpAHQAeQBUAGgAZQBBAFAASQBDAG8AbgBjAGUAcAB0AHMARgByAGEAbQBlAHcAbwByAGsAXwBFAEwAUwBFAFYASQBFAFIAXwAyADAAMQA1AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAXwBIAEQAEgCuVXNlcnMvb2JlcmFjZGEvRG9jdW1lbnRzL0tJVC9PbmVEcml2ZSAtIGJ3ZWR1L0luZm9ybWF0aWtfQlNjLzNfNC5TZW1lc3Rlci8wX1Byb3NlbWluYXIvMl9MaXRlcmF0dXIvQXV0b21hdGVkbWVhc3VyZW1lbnRvZkFQSXVzYWJpbGl0eVRoZUFQSUNvbmNlcHRzRnJhbWV3b3JrX0VMU0VWSUVSXzIwMTUucGRmABMAAS8AABUAAgAP//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4BLgEzATsEFQQXBBwEJwQwBD4EQgRJBFIEVwRkBGcEeQR8BIEAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAEgw==}}
+
+@article{Myers:2016:IAU:2942427.2896587,
+    Acmid = {2896587},
+    Address = {New York, NY, USA},
+    Author = {Myers, Brad A. and Stylos, Jeffrey},
+    Date-Added = {2018-07-04 09:40:52 +0000},
+    Date-Modified = {2018-07-04 09:40:52 +0000},
+    Doi = {10.1145/2896587},
+    Issn = {0001-0782},
+    Issue_Date = {June 2016},
+    Journal = {Commun. ACM},
+    Month = may,
+    Number = {6},
+    Numpages = {8},
+    Pages = {62--69},
+    Publisher = {ACM},
+    Title = {Improving API Usability},
+    Url = {http://doi.acm.org/10.1145/2896587},
+    Volume = {59},
+    Year = {2016},
+    Bdsk-Url-1 = {http://doi.acm.org/10.1145/2896587},
+    Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QfC4uLy4uLy4uLy4uL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci9NeWVyc18mX1N0eWxvcy1JbXByb3ZpbmdfQVBJX3VzYWJpbGl0eS5wZGbSFwsYGVdOUy5kYXRhTxECVAAAAAACVAACAAAMTWFjaW50b3NoX0hEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H015ZXJzXyZfU3R5bG9zLUltcCNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAABAAGAAAKIGN1AAAAAAAAAAAAAAAAAAsyX0xpdGVyYXR1cgAAAgCPLzpVc2VyczpvYmVyYWNkYTpEb2N1bWVudHM6S0lUOk9uZURyaXZlIC0gYndlZHU6SW5mb3JtYXRpa19CU2M6M180LlNlbWVzdGVyOjBfUHJvc2VtaW5hcjoyX0xpdGVyYXR1cjpNeWVyc18mX1N0eWxvcy1JbXByb3ZpbmdfQVBJX3VzYWJpbGl0eS5wZGYAAA4AVgAqAE0AeQBlAHIAcwBfACYAXwBTAHQAeQBsAG8AcwAtAEkAbQBwAHIAbwB2AGkAbgBnAF8AQQBQAEkAXwB1AHMAYQBiAGkAbABpAHQAeQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoAF8ASABEABIAjVVzZXJzL29iZXJhY2RhL0RvY3VtZW50cy9LSVQvT25lRHJpdmUgLSBid2VkdS9JbmZvcm1hdGlrX0JTYy8zXzQuU2VtZXN0ZXIvMF9Qcm9zZW1pbmFyLzJfTGl0ZXJhdHVyL015ZXJzXyZfU3R5bG9zLUltcHJvdmluZ19BUElfdXNhYmlsaXR5LnBkZgAAEwABLwAAFQACAA///wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgENARIBGgNyA3QDeQOEA40DmwOfA6YDrwO0A8EDxAPWA9kD3gAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAPg},
+    Bdsk-Url-2 = {https://dx.doi.org/10.1145/2896587}}
+
+@inproceedings{Stylos:2007:UIR:1248820.1248828,
+    Acmid = {1248828},
+    Address = {Washington, DC, USA},
+    Author = {Stylos, Jeffrey and Clarke, Steven},
+    Booktitle = {Proceedings of the 29th International Conference on Software Engineering},
+    Date-Added = {2018-07-04 09:39:37 +0000},
+    Date-Modified = {2018-07-04 09:39:37 +0000},
+    Doi = {10.1109/ICSE.2007.92},
+    Isbn = {0-7695-2828-7},
+    Numpages = {11},
+    Pages = {529--539},
+    Publisher = {IEEE Computer Society},
+    Series = {ICSE '07},
+    Title = {Usability Implications of Requiring Parameters in Objects' Constructors},
+    Url = {http://dx.doi.org/10.1109/ICSE.2007.92},
+    Year = {2007},
+    Bdsk-Url-1 = {http://dx.doi.org/10.1109/ICSE.2007.92},
+    Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QsS4uLy4uLy4uLy4uL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci9TdHlsb3NfJl9DbGFya2VfMjAwNy1Vc2FiaWxpdHlfaW1wbGljYXRpb25zX29mX3JlcXVpcmluZ19wYXJhbWV0ZXJzX2luX29iamVjdHNfY29uc3RydWN0b3JzLnBkZtIXCxgZV05TLmRhdGFPEQMmAAAAAAMmAAIAAAxNYWNpbnRvc2hfSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fU3R5bG9zXyZfQ2xhcmtlXzIwI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAEAAYAAAogY3UAAAAAAAAAAAAAAAAACzJfTGl0ZXJhdHVyAAACAMQvOlVzZXJzOm9iZXJhY2RhOkRvY3VtZW50czpLSVQ6T25lRHJpdmUgLSBid2VkdTpJbmZvcm1hdGlrX0JTYzozXzQuU2VtZXN0ZXI6MF9Qcm9zZW1pbmFyOjJfTGl0ZXJhdHVyOlN0eWxvc18mX0NsYXJrZV8yMDA3LVVzYWJpbGl0eV9pbXBsaWNhdGlvbnNfb2ZfcmVxdWlyaW5nX3BhcmFtZXRlcnNfaW5fb2JqZWN0c19jb25zdHJ1Y3RvcnMucGRmAA4AwABfAFMAdAB5AGwAbwBzAF8AJgBfAEMAbABhAHIAawBlAF8AMgAwADAANwAtAFUAcwBhAGIAaQBsAGkAdAB5AF8AaQBtAHAAbABpAGMAYQB0AGkAbwBuAHMAXwBvAGYAXwByAGUAcQB1AGkAcgBpAG4AZwBfAHAAYQByAGEAbQBlAHQAZQByAHMAXwBpAG4AXwBvAGIAagBlAGMAdABzAF8AYwBvAG4AcwB0AHIAdQBjAHQAbwByAHMALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaABfAEgARAASAMJVc2Vycy9vYmVyYWNkYS9Eb2N1bWVudHMvS0lUL09uZURyaXZlIC0gYndlZHUvSW5mb3JtYXRpa19CU2MvM180LlNlbWVzdGVyLzBfUHJvc2VtaW5hci8yX0xpdGVyYXR1ci9TdHlsb3NfJl9DbGFya2VfMjAwNy1Vc2FiaWxpdHlfaW1wbGljYXRpb25zX29mX3JlcXVpcmluZ19wYXJhbWV0ZXJzX2luX29iamVjdHNfY29uc3RydWN0b3JzLnBkZgATAAEvAAAVAAIAD///AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAUIBRwFPBHkEewSABIsElASiBKYErQS2BLsEyATLBN0E4ATlAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAABOc=}}
+
+@Article{Hofmeister2018,
+    author="Hofmeister, Johannes C.
+    and Siegmund, Janet
+    and Holt, Daniel V.",
+    title="Shorter identifier names take longer to comprehend",
+    journal="Empirical Software Engineering",
+    year="2018",
+    month="Apr",
+    day="26",
+    abstract="Developers spend the majority of their time reading code, a process in which identifier names play a key role. Although many identifier naming styles exist, they often lack an empirical basis and it is not clear whether short or long identifier names facilitate comprehension. In this paper, we investigate the effect of different identifier naming styles (single letters, abbreviations, and words) on program comprehension. We conducted an experimental study with 72 professional C{\#} developers who had to locate defects in source code snippets. We used a within-subjects design, such that each developer worked with all three versions of identifier naming styles, and we measured the time it took them to find a defect. We found that word identifiers led to a 19{\%} increase in speed to find defects compared to meaningless single letters and abbreviations, but we did not find a difference between letters and abbreviations. The results of our study suggest that code is more difficult to comprehend when it contains only letters and abbreviations as identifier names. Words as identifier names facilitate program comprehension and may help to save costs and improve software quality.",
+    issn="1573-7616",
+    doi="10.1007/s10664-018-9621-x",
+    url="https://doi.org/10.1007/s10664-018-9621-x"
 }
 
-@book{ConcreteMath,
-        author = "R.L. Graham and D.E. Knuth and O. Patashnik",
-        title = "Concrete mathematics",
-        publisher = "Addison-Wesley",
-        address = "Reading, MA",
-        year = "1989"
+@inproceedings{Fahl:2013:RSD:2508859.2516655,
+    author = {Fahl, Sascha and Harbach, Marian and Perl, Henning and Koetter, Markus and Smith, Matthew},
+    title = {Rethinking SSL Development in an Appified World},
+    booktitle = {Proceedings of the 2013 ACM SIGSAC Conference on Computer \&\#38; Communications Security},
+    series = {CCS '13},
+    year = {2013},
+    isbn = {978-1-4503-2477-9},
+    location = {Berlin, Germany},
+    pages = {49--60},
+    numpages = {12},
+    url = {http://doi.acm.org/10.1145/2508859.2516655},
+    doi = {10.1145/2508859.2516655},
+    acmid = {2516655},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {SSL, android, apps, ios, mitma, security},
+} 
+
+@Book{ cohen1988statistical,
+    title = { Statistical power analysis for the behavioral sciences },
+    author = { Cohen, Jacob },
+    publisher = { Hillsdale, N.J. : L. Erlbaum Associates },
+    year = { 1988 },
+    type = { Book },
+    edition = { 2nd ed },
+    isbn = { 0805802835 },
+    subjects = { Social sciences; Social Sciences; Statistics; Social Sciences -- statistics; Social sciences -- Statistical methods; Biometry; Probabilidades; Behavioral Sciences; Statistics as Topic; Probability; Sciences sociales -- Méthodes statistiques; Probabilités; Probabilities; Statistical power analysis; Statistische toetsen; Behaviorism; Mathematics },
+    language = { English },
+    contents = { The concepts of power analysis -- The t test  for means -- The significance of a product moment r -- Differences between correlation coefficients -- The test that a proportion is .50 and the sign test -- Differences between proportions -- Chi-square tests for goodness of fit and contingency tables -- The analysis of variance and covariance -- Multiple regression and correlation analysis -- Set correlation and multivariate methods -- Some issues in power analysis -- Computational procedures },
 }
 
-@unpublished{Simpson,
-        author = "H. Simpson",
-        title = "Proof of the {R}iemann {H}ypothesis",
-        note = "preprint (2003), available at
-        \texttt{http://www.math.drofnats.edu/riemann.ps}",
-        year = "2003"
-}
-
-@incollection{Er01,
-        author = "P. Erd{\H o}s",
-        title = "A selection of problems and results in combinatorics",
-        booktitle = "Recent trends in combinatorics (Matrahaza, 1995)",
-        publisher = "Cambridge Univ. Press",
-        address = "Cambridge",
-        pages = "1--6",
-        year = "1995"
-}
-@article{greenwade93,
-    author  = "George D. Greenwade",
-    title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
-    year    = "1993",
-    journal = "TUGBoat",
-    volume  = "14",
-    number  = "3",
-    pages   = "342--351"
+@Book{ murphy1998statistical,
+    title = { Statistical power analysis : a simple and general model for traditional and modern hypothesis tests },
+    edition = { 1st ed },
+    author = { Murphy, Kevin R and Myors, Brett },
+    publisher = { Mahwah, N.J. : L. Erlbaum Associates },
+    year = { 1998 },
+    type = { Book; Book/Illustrated },
+    isbn = { 0805829466 (acid-free paper) },
+    subjects = { Statistical power analysis; Statistical hypothesis testing },
+    language = { English }
 }
