@@ -16,7 +16,7 @@
 \title{API-Usability}
 \subtitle{Effekte der Konstruktoren}
 \date{\today}
-\author{Elias Hofele, David Oberacker und Calvin Urnakar}
+\author{Elias Hofele, David Oberacker und Calvin Urankar}
 \institute{Institut für Telematik, Telecooperation Office (TECO), Karlsruher Institut für Technologie}
 \titlegraphic{\hfill\includegraphics[height=0.5cm]{TECO_Logo.jpg}}
 
@@ -79,33 +79,38 @@
 		Jeweils 4 Codeschnipsel mit verstecktem Fehler
 	\end{frame}
 
-	\begin{frame}{Abhängige Variablen}
-		\begin{itemize}
-			\item Anzahl gefundener Fehler
-			\item Zeit
-			\item Lesefokus (Areas of Interest)
+	\begin{frame}{Variablen}
+		\begin{columns}[T,onlytextwidth]
+	
+			\column{0.5\textwidth}
+			Abhängige Variablen
 			\begin{itemize}
-				\item Dokumentation
-				\item Pre-Defekt
-				\item Defekt
-				\item Post-Defekt
+				\item Anzahl gefundener Fehler
+				\item Zeit
+				\item Lesefokus (Areas of Interest)
+				\begin{itemize}
+					\item Dokumentation
+					\item Pre-Defekt
+					\item Defekt
+					\item Post-Defekt
+				\end{itemize}
 			\end{itemize}
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}{Unabhängige Variablen}
-		\begin{itemize}
-			\item Art des Konstruktors:
+		
+			\column{0.5\textwidth}
+			Unabhängige Variablen
 			\begin{itemize}
-				\item Default
-				\item Required
+				\item Art des Konstruktors:
+				\begin{itemize}
+					\item Default
+					\item Required
+				\end{itemize}
+				\item Art des Fehlers:
+				\begin{itemize}
+					\item Syntaktisch
+					\item Semantisch
+				\end{itemize}
 			\end{itemize}
-			\item Art des Fehlers:
-			\begin{itemize}
-				\item Syntaktisch
-				\item Semantisch
-			\end{itemize}
-		\end{itemize}
+		\end{columns}	
 	\end{frame}
 
 	\begin{frame}[standout]{Hypothese}
