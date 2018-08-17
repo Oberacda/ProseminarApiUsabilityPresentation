@@ -15,7 +15,7 @@
 
 \title{API-Usability}
 \subtitle{Effekte der Konstruktoren}
-\date{\today}
+\date{21. August 2018}
 \author{Elias Hofele, David Oberacker und Calvin Urankar}
 \institute{Institut für Telematik, Telecooperation Office (TECO), Karlsruher Institut für Technologie}
 \titlegraphic{\hfill\includegraphics[height=0.5cm]{TECO_Logo.jpg}}
@@ -30,6 +30,10 @@
 %	\end{frame}
 
 \section{Motivation}
+
+	\begin{frame}{APIs \& Benutzbarkeit}
+	
+	\end{frame}
 
 	\begin{frame}[fragile]{Default vs. Required}
 		\begin{columns}[T,onlytextwidth]
@@ -75,8 +79,22 @@
 
 \section{Forschungsfrage \& Hypothese}
 
-	\begin{frame}{Idee}
-		Jeweils 4 Codeschnipsel mit verstecktem Fehler
+	\begin{frame}[standout]{Hypothese}
+		Semantische Fehler im Quellcode werden mit Default-Konstruktoren schneller entdeckt
+		\begin{center}\small{und}\end{center}
+		Konstruktoren haben keinen Einfluss auf das Finden von Syntaktischen Fehlern.
+	\end{frame}
+
+	\begin{frame}{Nutzerstudie}
+		\begin{itemize}
+			\item Web-basierte Studie\\
+			\vspace{\baselineskip}
+			\item Jeweils 4 Codeschnipsel\\
+			\vspace{\baselineskip}
+			\item Versteckte Fehler\\
+			\vspace{\baselineskip}
+			\item Within Subjects
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Variablen}
@@ -113,28 +131,36 @@
 		\end{columns}	
 	\end{frame}
 
-	\begin{frame}[standout]{Hypothese}
-		Semantische Fehler im Quellcode werden mit Default-Konstruktoren schneller entdeckt
-		\begin{center}und\end{center}
-		Konstruktoren haben keinen Einfluss auf das Finden von Syntaktischen Fehlern.
-	\end{frame}
-
 \section{Experimentalaufbau}
 
-	\begin{frame}{Aufgabenwahl}
+	\begin{frame}{Aufgabenkriterien}
 
 	\end{frame}
 
-	\begin{frame}{PETER}
+	\begin{frame}{Peter  i}
+		\begin{figure}
+			\includegraphics[scale=0.15]{graphics/peter_window.png}
+			\caption{\label{fig:peter_window.png} Probanden sahen stets nur einen Ausschnitt des Quellcodes, welchen sie jedoch nach oben und unten bewegen konnten.}
+		\end{figure}
+	\end{frame}
 
+	\begin{frame}{Peter  ii}	
+		\begin{figure}
+			\includegraphics[scale=0.15]{graphics/peter_correction.png}
+			\caption{\label{fig:peter_correction.png} Durch das Drücken der Leertaste konnten sie indizieren das sie den Fehler gefunden hatten.}
+		\end{figure}
 	\end{frame}
 
 \section{Resultate}
 
-	\begin{frame}{Bearbeitungszeit pro Area of Interest}
+	\begin{frame}{Stichprobenbeschreibung}
+	
+	\end{frame}
+
+	\begin{frame}{Bearbeitungszeit nach Constructor}
 		\begin{figure}
-			\includegraphics[scale=0.8]{graphics/section_percent.png}
-			\caption{\label{fig:section_percent} Die prozentuale Verteilung der Bearbeitungszeit auf verschiedene Areas of Interest (AOI)}
+			\includegraphics[scale=0.35]{graphics/box_time-constructor.png}
+			\caption{\label{fig:box_time-constructor.png} Die prozentuale Verteilung der Bearbeitungszeit auf verschiedene Areas of Interest (AOI)}
 		\end{figure}
 	\end{frame}
 
