@@ -117,20 +117,6 @@
 		\begin{columns}[T,onlytextwidth]
 	
 			\column{0.5\textwidth}
-			Abhängige Variablen
-			\begin{itemize}
-				\item Anzahl gefundener Fehler
-				\item Zeit
-				\item Lesefokus (Areas of Interest)
-				\begin{itemize}
-					\item Dokumentation
-					\item Pre-Defekt
-					\item Defekt
-					\item Post-Defekt
-				\end{itemize}
-			\end{itemize}
-		
-			\column{0.5\textwidth}
 			Unabhängige Variablen
 			\begin{itemize}
 				\item Art des Konstruktors:
@@ -143,7 +129,22 @@
 					\item Syntaktisch
 					\item Semantisch
 				\end{itemize}
+			\end{itemize}			
+		
+			\column{0.5\textwidth}
+			Abhängige Variablen
+			\begin{itemize}
+				\item Anzahl gefundener Fehler
+				\item Zeit
+				\item Lesefokus (Areas of Interest)
+				\begin{itemize}
+					\item Dokumentation
+					\item Pre-Defekt
+					\item Defekt
+					\item Post-Defekt
+				\end{itemize}
 			\end{itemize}
+			
 		\end{columns}	
 	\end{frame}
 
@@ -152,18 +153,19 @@
 	\begin{frame}{Aufgabenanforderungen}
 		\begin{itemize}
 			\item Plausibilität\\
+				\begin{itemize}
+					\item Nutzung der Standard-Java-API
+				\end{itemize}
 			\vspace{\baselineskip}
 			\item Komplexität\\
 			\vspace{\baselineskip}
-            \item Nutzung der Standard-Java-API\\
+			\item Untereinander unabhängig (Minimierung der Lerneffekte)\\
             \vspace{\baselineskip}
 			\item Länge
 			\begin{itemize}
 				\item $\sim$ 100 Zeilen Dokumentation
 				\item $\sim$ 80 Zeilen Code
 			\end{itemize}
-			\vspace{\baselineskip}
-			\item Untereinander unabhängig (Minimierung der Lerneffekte)\\
 		\end{itemize}
 	\end{frame}
 
@@ -240,7 +242,7 @@
 	\end{frame}
 	
 	\begin{frame}[standout]{Fazit}
-		Unsere Hypothese wird durch die Resultate NICHT bestätigt.
+		Unsere Hypothese wird durch die Resultate \underline{nicht} bestätigt.
 	\end{frame}
 
 \section{Vielen Dank für eure Aufmerksamkeit}
